@@ -2,4 +2,4 @@ a = 5
 b = 3 
 a = b
 
-print(a,"\n",b)
+print(f"{a}\n{b}")
