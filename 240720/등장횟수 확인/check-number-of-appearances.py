@@ -4,4 +4,4 @@ for i in range(5):
     if n % 2 == 0:
         cnt += 1
 
-print(n)
+print(cnt)
