@@ -6,4 +6,5 @@ while(1):
     if n <= 1:
         break
     else :
+        continue
 print(i)
