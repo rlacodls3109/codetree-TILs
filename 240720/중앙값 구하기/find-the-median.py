@@ -7,14 +7,11 @@ if a > b and a > c :
     else :
         print(c)
 
-elif a < b:
-    if a > c:
-        print(a)
-    else: 
-        print(c)
+elif a > b or a > c:
+    print(a)
 
-elif a < c:
-    if a > b:
-        print(a)
+else:
+    if b > c:
+        print(c)
     else:
         print(b)
