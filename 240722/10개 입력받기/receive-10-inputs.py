@@ -10,4 +10,4 @@ for i in arr:
     sum += i
 
 avg = sum / cnt
-print(sum, avg)
+print(sum, f"{avg:.1f}")
