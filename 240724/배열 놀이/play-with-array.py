@@ -18,3 +18,4 @@ for i in range(q):
     elif que[0] == 3:
         for j in array[que[1]-1:que[2]:]:
             print(j,end=" ")
+        print()
