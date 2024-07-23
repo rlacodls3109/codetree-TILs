@@ -4,8 +4,9 @@ arr = list(map(int,input().split()))
 a,b = arr[0],arr[1]
 
 while(1):
-    a = a//b
     rest[int(a%b)] += 1
+    a = a//b
+
     if a <= 1:
         break
 
