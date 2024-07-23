@@ -10,7 +10,6 @@ while(1):
         break
 
 sum = 0
-print(rest)
 for i in rest:
     sum += i*i
 
