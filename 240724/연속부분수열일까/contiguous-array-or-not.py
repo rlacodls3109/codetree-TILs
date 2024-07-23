@@ -5,7 +5,7 @@ A = list(map(int,input().split()))
 B = list(map(int,input().split()))
 
 for i in range(len(A)):
-    if A[i] == B[0]:
+    if A[i] == B[0] and len(A)-i-1 >= len(B):
         for j in range(len(B)):
             if A[i+j] != B[j]:
                 result = 'No'
