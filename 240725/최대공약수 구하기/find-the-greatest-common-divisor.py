@@ -1,9 +1,11 @@
 n, m = tuple(map(int,input().split()))
 
-def find(n,m):
-    for i in range(n,0,-1):
+def find(n,m): 
+    gcd = 0
+    for i in range(1,min(n,m)+1):
         if n % i == 0 and m % i == 0:
-            print(i)
-            break
+            gcd = i
+            
+    print(gcd)
 
 find(n,m)
