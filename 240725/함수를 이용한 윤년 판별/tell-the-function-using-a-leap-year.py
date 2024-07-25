@@ -5,6 +5,7 @@ def is_yoon(y):
                 return "true"
             return "false"
         return "true"
+    return "false"
 
 y = int(input())
 
