@@ -7,8 +7,6 @@ arr_2d = [
 
 for i in range(n):
     arr_2d[i][0] = 1
-
-for j in range(n):
     arr_2d[0][j] = 1
 
 for i in range(1,n):
