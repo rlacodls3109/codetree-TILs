@@ -1,17 +1,13 @@
-cnt = 0
-
 def answer(n):
     global cnt
     if n == 1:
-        return
-    cnt += 1
+        return 0
     if n % 2 == 0:
-        return answer(n//2)
+        return answer(n//2) + 1
     
     else:
-        return answer(n//3)
-    
+        return answer(n//3) + 1
+     
 
 n = int(input())
-answer(n)
-print(cnt)
+print(answer(n))
