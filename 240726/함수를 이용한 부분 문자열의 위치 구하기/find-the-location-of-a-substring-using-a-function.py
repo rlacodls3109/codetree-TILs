@@ -11,5 +11,6 @@ answer = -1
 for k in range(len(N)-len(M)+1):
     if find_elem(k,M):
         answer = k
+        break
 
 print(answer)
