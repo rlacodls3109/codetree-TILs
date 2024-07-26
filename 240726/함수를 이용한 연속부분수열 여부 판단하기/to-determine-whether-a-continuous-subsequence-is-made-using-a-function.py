@@ -1,13 +1,19 @@
+# 함수 두개로 나누기!
+
+def is_exist(n):
+    for j in range(len(b)):
+        if a[n+j] != b[j]:
+            return False
+    return True
+
 def check(a,b):
-    for i in range(0,len(a)-len(b)+2):
-        start = i
-        for j in range(len(b)):
-            if a[start] != b[j]:
-                break
-            start += 1
-            if j == len(b)-1:
-                return True
+    for i in range(len(a)-len(b)+1): 
+        if is_exist(i):
+            return True
     return False
+
+
+
 
 n1, n2 = tuple(map(int,input().split()))
 
