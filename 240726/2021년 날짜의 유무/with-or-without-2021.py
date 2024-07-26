@@ -39,7 +39,7 @@ def last_d(M):
     return day
 
 def is_exist(M,D):
-    if M >= 12 and D <= last_d(M):
+    if M <= 12 and D <= last_d(M):
         return True
     else:
         return False
