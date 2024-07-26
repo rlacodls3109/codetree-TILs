@@ -1,7 +1,23 @@
 n, m = tuple(map(int,input().split()))
 A = list(map(int,input().split()))
 
-def modify_m(m):
+# m을 전역변수로 활용하면 더 효율적임!
+def answer():
+    global m
+    sum = 0
+    while m > 0:
+        sum += A[m-1]
+
+        if m % 2 == 0:
+            m //= 2
+        else:
+            m -= 1
+    return sum
+
+print(answer())
+
+'''
+def modify_m():
     if m % 2 != 0:
         m -= 1
     else:
@@ -16,3 +32,4 @@ def sum_A(m):
     print(sum)
 
 sum_A(m)
+'''
