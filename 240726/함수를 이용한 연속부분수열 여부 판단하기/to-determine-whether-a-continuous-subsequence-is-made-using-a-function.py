@@ -2,9 +2,11 @@ def check(a,b):
     for i in range(0,len(a)-len(b)+2):
         start = i
         for j in range(len(b)):
-            if a[i] != b[j]:
+            if a[start] != b[j]:
                 break
-            return True
+            start += 1
+            if j == len(b)-1:
+                return True
     return False
 
 n1, n2 = tuple(map(int,input().split()))
