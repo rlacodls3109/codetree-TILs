@@ -1,6 +1,8 @@
+from datetime import datetime
+
 class Weather:
     def __init__(self,date,weekday,weather):
-        self.date = date
+        self.date = datetime.strptime(date, '%Y-%m-%d').date()
         self.weekday = weekday
         self.weather = weather
 
@@ -11,15 +13,13 @@ weathers = [
     for date,weekday,weather in arr
 ]
 
-min = 2100
+min_date = datetime.strptime("2100-12-31",'%Y-%m-%d').date()
 idx = 0
 
 for i in range(n):
     if weathers[i].weather == "Rain":
-        y = int(weathers[i].date.split("-")[0])
-
-        if min > y:
-            min = y
+        if min_date > weathers[i].date:
+            min_date = weathers[i].date
             idx = i
 
 print(weathers[idx].date, weathers[idx].weekday, weathers[idx].weather)
