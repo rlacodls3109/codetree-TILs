@@ -2,7 +2,7 @@ from datetime import datetime
 
 class Weather:
     def __init__(self,date,weekday,weather):
-        self.date = datetime.strptime(date, '%Y-%m-%d').date()
+        self.date = date
         self.weekday = weekday
         self.weather = weather
 
@@ -13,7 +13,7 @@ weathers = [
     for date,weekday,weather in arr
 ]
 
-min_date = datetime.strptime("2100-12-31",'%Y-%m-%d').date()
+min_date = "9999-99-99"
 idx = 0
 
 for i in range(n):
