@@ -1,3 +1,5 @@
+import sys
+
 class Codename:
     def __init__(self,name,score):
         self.name = name
@@ -6,11 +8,11 @@ class Codename:
 
 agents = []
 for _ in range(5):
-    name,score = tuple(input().split())
+    name, score = tuple(input().split())
     score = int(score)
     agents.append(Codename(name,score))
 
-min = 0
+min = sys.maxsize
 idx = 0
 for i in range(5):
     agent = agents[i]
