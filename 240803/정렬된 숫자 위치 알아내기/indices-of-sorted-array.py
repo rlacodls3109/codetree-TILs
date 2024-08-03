@@ -17,8 +17,11 @@ for i,k in enumerate(num):
 #custom comparator (숫자 오름차순, 인덱스 오름차순)
 number.sort(key = lambda x: (x.number,x.index))
 
+#정답 배열 선언
 position = [0]*n
 
+#정렬된 숫자들의 원래 인덱스를 활용한 정답 배열 저장
+#기존 인덱스에 해당하는 배열의 위치에 정렬된 인덱스 값을 저장한다.
 for i,N in enumerate(number,start=1):
     position[N.index-1] = i
 
