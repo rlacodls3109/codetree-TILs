@@ -20,5 +20,5 @@ for i in range(k):
         arr[j] += 1 #a번 칸부터 b번 칸까지 블럭을 하나 씩 샇는다.
 
 #결과 값 가져오기
-result = search_high(arr)
+result = search_max(arr)
 print(result)
