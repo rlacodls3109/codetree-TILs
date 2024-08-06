@@ -1,5 +1,7 @@
 m1, d1, m2, d2 = tuple(map(int,input().split()))
-week = input()
+w = input()
+
+#1월 1일부터 며칠이 지났는 지 구하는 함수
 def num_of_days(m,d):
     answer = 0
 
@@ -12,7 +14,10 @@ def num_of_days(m,d):
     return answer
 
 diff = num_of_days(m2,d2) - num_of_days(m1, d1)
+week = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]
 
-count = (diff // 7) + 1
+week_count = diff - week.index(w)
 
-print(count)
+answer = ( week_count // 7) + 1
+
+print(answer)
