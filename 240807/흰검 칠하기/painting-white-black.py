@@ -9,9 +9,9 @@ Color = [-1] * (MAX_R + 1) # 0이면 흰, 1이면 검, 2면 회색
 
 current_pos = OFFSET
 
-# White[i] == 2 and Black[i] == 2 이면 Color[i] = 2
+# White[i] >= 2 and Black[i] >= 2 이면 Color[i] = 2
 def check_gray(White,Black,i):
-    if White[i] == 2 and Black[i] == 2:
+    if White[i] >= 2 and Black[i] >= 2:
         Color[i] = 2
 
 for _ in range(n):
