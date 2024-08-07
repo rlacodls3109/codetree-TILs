@@ -36,9 +36,12 @@ for _ in range(M):
             B[j] = current_pos_B - 1
             current_pos_B -= 1
     current_time_B += t
+    max_time = current_time_B
         
 
-for time in range(1,2*OFFSET+1):
+for time in range(1,max_time+1):
     if A[time] == B[time]:
         print(time)
         break
+    elif time == max_time:
+        print(-1)
