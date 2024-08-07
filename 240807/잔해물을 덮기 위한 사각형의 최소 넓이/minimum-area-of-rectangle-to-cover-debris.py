@@ -20,6 +20,7 @@ max_x = -1
 min_x = 2*OFFSET+1
 max_y = -1
 min_y = 2*OFFSET+1
+cnt = 0
 
 for x in range(0,2*OFFSET+1):
     for y in range(0,2*OFFSET+1):
@@ -32,6 +33,12 @@ for x in range(0,2*OFFSET+1):
                 max_y = y+1
             if y <= min_y:
                 min_y = y
+            cnt += 1
 
-area = (max_x-min_x) * (max_y-min_y)
+if cnt == 0:
+    area = 0
+
+else : 
+    area = (max_x-min_x) * (max_y-min_y)
+    
 print(area)
