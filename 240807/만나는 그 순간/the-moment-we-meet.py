@@ -1,4 +1,4 @@
-OFFSET = 1000
+OFFSET = 1000000
 N, M = tuple(map(int,input().split()))
 
 A = [0] * (2*OFFSET+1)
