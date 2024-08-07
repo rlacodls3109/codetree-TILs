@@ -1,4 +1,4 @@
-OFFSET = 10
+OFFSET = 1000
 MAX_R = 2*OFFSET
 
 rec = [
