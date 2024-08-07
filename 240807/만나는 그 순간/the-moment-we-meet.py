@@ -1,8 +1,11 @@
 OFFSET = 1000000
+
 N, M = tuple(map(int,input().split()))
 
-A = [0] * (2*OFFSET+1)
-B = [0] * (2*OFFSET+1)
+# 시간에 대한 배열
+A = [0] * (OFFSET+1)
+B = [0] * (OFFSET+1)
+
 
 current_pos_A = 0
 current_time_A = 0
