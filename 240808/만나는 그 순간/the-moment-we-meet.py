@@ -65,7 +65,7 @@ for _ in range(M):
 '''
 
 ans = -1
-for time in range(1,OFFSET+1):
+for time in range(1,time_A):
     if A[time] == B[time]:
         ans = time
         break
