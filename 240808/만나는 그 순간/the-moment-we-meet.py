@@ -20,7 +20,7 @@ for _ in range(N):
 
 # B가 매 초마다 서있는 위치를 기록
 time_B = 0
-for _ in range(N):
+for _ in range(M):
     d, t = tuple(input().split())
     t = int(t)
     for _ in range(t):
@@ -63,7 +63,6 @@ for _ in range(M):
     current_time_B += t
     max_time = current_time_B
 '''
-
 
 ans = -1
 for time in range(1,OFFSET+1):
