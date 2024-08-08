@@ -65,10 +65,10 @@ for _ in range(M):
 '''
 
 
-
+ans = -1
 for time in range(1,OFFSET+1):
     if A[time] == B[time]:
-        print(time)
+        ans = time
         break
-    elif time == max_time:
-        print(-1)
+
+print(ans)
