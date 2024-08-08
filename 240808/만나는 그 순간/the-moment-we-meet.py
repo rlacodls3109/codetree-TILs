@@ -65,8 +65,9 @@ for _ in range(M):
 '''
 
 ans = -1
+# 이동한 시간인 time_A와 time_B는 동일하므로 범위를 1~time_A로 설정
 for time in range(1,time_A):
-    if A[time] == B[time]:
+    if A[time] == B[time]: #같은 시간에 같은 위치가 되는 첫번째 지점의 시간 구하기
         ans = time
         break
 
