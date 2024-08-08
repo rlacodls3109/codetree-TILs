@@ -66,7 +66,7 @@ for _ in range(M):
 
 
 
-for time in range(1,max_time+1):
+for time in range(1,OFFSET+1):
     if A[time] == B[time]:
         print(time)
         break
