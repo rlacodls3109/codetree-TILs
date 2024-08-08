@@ -6,21 +6,21 @@ A = [0] * (OFFSET+1)
 B = [0] * (OFFSET+1)
 
 # a의 이동거리를 기록
-a_time = 0
+a_time = 1
 for _ in range(n):
     v, t = tuple(map(int,input().split()))
 
     for _ in range(t):
-        A[a_time + 1] = A[a_time] + v
+        A[a_time] = A[a_time-1] + v
         a_time += 1
 
 # b의 이동거리를 기록
-b_time = 0
+b_time = 1
 for _ in range(m):
     v, t = tuple(map(int,input().split()))
 
     for _ in range(t):
-        B[b_time + 1] = B[b_time] + v
+        B[b_time] = B[b_time-1] + v
         b_time += 1
 
 #선두로 가는 사람 추가할 배열
