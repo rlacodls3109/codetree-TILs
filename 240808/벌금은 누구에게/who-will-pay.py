@@ -1,7 +1,7 @@
 N, M, K = tuple(map(int,input().split()))
 
 check_student = [0] * (N+1)
-student_payturn = [0] * (N+1)
+student_payturn = [-1] * (N+1)
 
 pay_turn = 1
 
