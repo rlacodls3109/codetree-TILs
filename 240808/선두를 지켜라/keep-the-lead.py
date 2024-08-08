@@ -1,4 +1,4 @@
-OFFSET = 1000
+OFFSET = 1000000
 n, m = tuple(map(int,input().split()))
 
 # 매 시간마다의 거리를 저장하는 배열
