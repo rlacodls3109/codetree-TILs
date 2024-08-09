@@ -11,7 +11,7 @@ time_a = 1
 for _ in range(N):
     v,t = tuple(map(int,input().split()))
     for _ in range(t):
-        A[time_a] = A[time_a] + v
+        A[time_a] = A[time_a-1] + v
         time_a += 1
 
 # b의 이동경로 기록
@@ -19,7 +19,7 @@ time_b = 1
 for _ in range(M):
     v,t = tuple(map(int,input().split()))
     for _ in range(t):
-        B[time_b] = B[time_b] + v
+        B[time_b] = B[time_b-1] + v
         time_b += 1
 
 # 명예의 전당 배열
@@ -35,6 +35,7 @@ for i in range(time_a):
     elif A[i] < B[i]:
         rank.append(1)
 
+        
 #명예의 전당 배열값이 직전과 달라졌다면 카운트
 cnt = 0
 for i,now_rank in enumerate(rank):
