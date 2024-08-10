@@ -27,7 +27,7 @@ for i in range(2,n*m+1):
 
     # 더이상 나아갈 수 없다면 시계방향으로 90도 회전
     if not in_range(nx,ny) or answer[nx][ny] != 0:
-        now_d = (now_d + 1)
+        now_d = (now_d + 1) % 4
     
     # 그 다음 위치로 이동
     x,y = x+dx[now_d], y+dy[now_d]
