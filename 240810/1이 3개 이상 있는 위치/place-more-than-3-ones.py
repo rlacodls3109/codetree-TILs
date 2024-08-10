@@ -7,7 +7,7 @@ dxs, dys = [0, 1, 0, -1], [1, 0, -1, 0]
 
 #인덱스가 행렬의 범위 내에 있는 지 확인하는 함수
 def in_range(row,col):
-    return row < n and col < n
+    return 0 <= row and row < n and 0 <= col and col < n
 
 for _ in range(n):
         arr.append(list(map(int,input().split())))
