@@ -23,6 +23,7 @@ for row in range(n): #행
             if in_range(n_row,n_col) and arr[n_row][n_col] == 1:
                 cnt += 1
         
+        # 만약 3개 이상이라면
         if cnt >= 3:
             ans += 1
 
