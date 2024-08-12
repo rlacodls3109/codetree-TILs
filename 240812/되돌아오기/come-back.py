@@ -36,6 +36,8 @@ for arr in ques:
         if x == 0 and y == 0:
             ans = t
             break
+    if x==0 and y==0 :
+        break
 
 # 정답 출력
 print(ans)
