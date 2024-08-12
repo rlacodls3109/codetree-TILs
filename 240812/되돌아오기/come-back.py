@@ -36,6 +36,7 @@ for arr in ques:
         if x == 0 and y == 0:
             ans = t
             break
+    #  x,y 가 0이 되고 나면 더이상 배열을 순회하지 않는다.
     if x==0 and y==0 :
         break
 
