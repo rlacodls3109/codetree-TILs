@@ -2,15 +2,9 @@ import sys
 
 MAX_INT = -sys.maxsize
 
-a = input()
+two_list = list(map(int, list(input())))
 
-# 입력받은 문자열 리스트로 저장
-two_list = [
-    i
-    for i in a
-]
-
-max = MAX_INT
+ans = MAX_INT
 
 
 for i,binary in enumerate(two_list):
@@ -27,7 +21,6 @@ for i,binary in enumerate(two_list):
         if two == '1':
             N += 2 ** (len(b) - index-1)
     # 구한 정수 N이 최댓값인지 확인
-    if max < N:
-        max = N
+    ans = max(ans,N)
 
-print(max)
+print(ans)
