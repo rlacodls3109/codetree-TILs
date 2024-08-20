@@ -3,7 +3,6 @@ import sys
 MAX_INT = -sys.maxsize
 
 two_list = list(map(int, list(input())))
-
 ans = MAX_INT
 
 
@@ -14,11 +13,11 @@ for i,binary in enumerate(two_list):
         b.append(j)
     
     # i번째 자리 2진수가 0이면 1로, 1이면 0으로 바꾼다 
-    b[i] = '0' if binary=='1' else '1'
+    b[i] = 0 if binary==1 else 1
     # 정수 N 구하기
     N = 0
     for index,two in enumerate(b) :
-        if two == '1':
+        if two == 1:
             N += 2 ** (len(b) - index-1)
     # 구한 정수 N이 최댓값인지 확인
     ans = max(ans,N)
