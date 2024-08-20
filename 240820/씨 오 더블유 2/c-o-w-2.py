@@ -4,7 +4,7 @@ given = input()
 
 cnt = 0
 
-
+# 모든 쌍을 다 잡아본다
 for i in range(n):
     if given[i] == 'C':
         for j in range(i+1,n):
