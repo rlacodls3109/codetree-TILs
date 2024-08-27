@@ -12,7 +12,6 @@ result = 0
 
 for i in range(n):
     for j in range(n):
-        cnt_final = 0
         cnt = 0
         if in_range(i,j+1) and in_range(i,j+2):
             cury1 = j
@@ -44,7 +43,7 @@ for i in range(n):
                         
                         while(1):
                             if arr[k][cury2] == 1:
-                                cnt_final += 1
+                                cnt3 += 1
                             if cury2 == l+2:
                                 break
                             cury2 += 1
