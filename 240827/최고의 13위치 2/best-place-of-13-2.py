@@ -8,14 +8,17 @@ arr = [
 ]
 
 result = 0
-
+# step1. 첫번째 격자를 놓는다. (i,j)
 for i in range(n):
     for j in range(n-2):
+        # 두번째 격자를 놓는다. (k,l)
         for k in range(n):
             for l in range(n-2):
+                # step2. 두 격자가 겹치면 카운트 하지 않는다.
                 if i == k and abs(j-l) <=2:
                     continue
                 
+                #step3. 두 격자가 겹치지 않는 경우에 대해 동전 수를 세어 갱신한다.
                 cnt1 = arr[i][j] + arr[i][j+1] + arr[i][j+2]
                 cnt2 = arr[k][l] + arr[k][l+1] + arr[k][l+2]
 
