@@ -3,17 +3,24 @@ arr = [
     for _ in range(19)
 ]
 
+def in_range(x,y):
+    return x >= 0 and x <= 19 and y >= 0 and y <= 19 
+
 def check_updown(x,y,color):
-    return arr[x-1][y] == color and arr[x-2][y] == color and arr[x+1][y] == color and arr[x+2][y] == color
+    if in_range(x-1,y) and in_range(x-2,y) and in_range(x+1,y) and in_range(x+2,y):
+        return arr[x-1][y] == color and arr[x-2][y] == color and arr[x+1][y] == color and arr[x+2][y] == color
 
 def check_side(x,y,color):
-    return arr[x][y-1] == color and arr[x][y-2] == color and arr[x][y+1] == color and arr[x][y+2] == color
+    if in_range(x,y-1) and in_range(x,y-2) and in_range(x,y+1) and in_range(x,y+2):
+        return arr[x][y-1] == color and arr[x][y-2] == color and arr[x][y+1] == color and arr[x][y+2] == color
 
 def check_Rdiagonal(x,y,color):
-    return arr[x-1][y-1] == color and arr[x-2][y-2] == color and arr[x+1][y+1] == color and arr[x+2][y+2] == color
+    if in_range(x-1,y-1) and in_range(x-2,y-2) and in_range(x+1,y+1) and in_range(x+2,y+2):
+        return arr[x-1][y-1] == color and arr[x-2][y-2] == color and arr[x+1][y+1] == color and arr[x+2][y+2] == color
 
 def check_Ldiagonal(x,y,color):
-    return arr[x-1][y+1] == color and arr[x-2][y+2] == color and arr[x+1][y-1] == color and arr[x+2][y-2] == color
+    if in_range(x-1,y+1) and in_range(x-2,y+2) and in_range(x+1,y-1) and in_range(x+2,y-2):
+        return arr[x-1][y+1] == color and arr[x-2][y+2] == color and arr[x+1][y-1] == color and arr[x+2][y-2] == color
 
 winner = 0
 
