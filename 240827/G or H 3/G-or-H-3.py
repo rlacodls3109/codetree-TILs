@@ -1,7 +1,7 @@
-MAX_LINE = 100
+MAX_K = 10000
 n,k = tuple(map(int,input().split()))
 
-arr = [0] * MAX_LINE
+arr = [0] * MAX_K
 
 #문제에서 주어진 조건을 배열에 저장한다.
 for _ in range(n):
