@@ -4,7 +4,7 @@ arr = [
 ]
 
 def in_range(x,y):
-    return x >= 0 and x <= 19 and y >= 0 and y <= 19 
+    return x >= 0 and x < 19 and y >= 0 and y < 19 
 
 def check_updown(x,y,color):
     if in_range(x-1,y) and in_range(x-2,y) and in_range(x+1,y) and in_range(x+2,y):
