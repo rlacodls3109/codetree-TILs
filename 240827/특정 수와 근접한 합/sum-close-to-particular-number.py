@@ -1,4 +1,5 @@
 import sys
+
 n, s = tuple(map(int,input().split()))
 number_list = list(map(int,input().split()))
 result = sys.maxsize
