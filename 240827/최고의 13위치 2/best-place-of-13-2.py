@@ -12,9 +12,10 @@ result = 0
 
 for i in range(n):
     for j in range(n):
+        cnt_final = 0
+        cnt = 0
         if in_range(i,j+1) and in_range(i,j+2):
             cury1 = j
-            cnt = 0
             while(1):
                 if arr[i][cury1] == 1:
                     cnt += 1
@@ -22,9 +23,9 @@ for i in range(n):
                     break
                 cury1 += 1
 
-            cnt_final = cnt
             for k in range(i+1,n):
                 for l in range(n):
+                    cnt_final = cnt
                     if in_range(k,l+1) and in_range(k,l+2):
                         cury2 = l
                         
@@ -35,6 +36,6 @@ for i in range(n):
                                 break
                             cury2 += 1
             
-            result = max(result,cnt_final)
+                    result = max(result,cnt_final)
 
 print(result)
