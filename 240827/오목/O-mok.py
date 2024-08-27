@@ -14,4 +14,4 @@ for i in range(2,len(arr)-1):
         if arr[i][j] != 0:
             if check_side(i,j,arr[i][j]) or check_updown(i,j,arr[i][j]):
                 print(arr[i][j])
-                print(i,j)
+                print(i+1,j+1)
