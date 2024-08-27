@@ -17,8 +17,8 @@ def check_Ldiagonal(x,y,color):
 
 winner = 0
 
-for i in range(2,len(arr)-1):
-    for j in range(2,len(arr[1])-1):
+for i in range(len(arr)):
+    for j in range(len(arr[1])):
         if arr[i][j] != 0:
             color = arr[i][j]
             if check_side(i,j,color) or check_updown(i,j,color) or check_Rdiagonal(i,j,color) or check_Ldiagonal(i,j,color):
