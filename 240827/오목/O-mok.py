@@ -9,8 +9,11 @@ def check_updown(x,y,color):
 def check_side(x,y,color):
     return arr[x][y-1] == color and arr[x][y-2] == color and arr[x][y+1] == color and arr[x][y+2] == color
 
-def check_diagonal(x,y,color):
+def check_Rdiagonal(x,y,color):
     return arr[x-1][y-1] == color and arr[x-2][y-2] == color and arr[x+1][y+1] == color and arr[x+2][y+2] == color
+
+def check_Ldiagonal(x,y,color):
+    return arr[x-1][y+1] == color and arr[x-2][y+2] == color and arr[x+1][y-1] == color and arr[x+2][y-2] == color
 for i in range(2,len(arr)-1):
     for j in range(2,len(arr[1])-1):
         if arr[i][j] != 0:
