@@ -12,8 +12,8 @@ result = sys.maxsize
 
 
 for i in range(6):
-    for j in range(i,6):
-        for k in range(j,6):
+    for j in range(i+1,6):
+        for k in range(j+1,6):
             result = min(result,get_diff(i,j,k))
 
 print(result)
