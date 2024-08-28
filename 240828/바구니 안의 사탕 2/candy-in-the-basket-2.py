@@ -14,6 +14,7 @@ for _ in range(n):
 
 result_max = -1
 
+# k(배열의 구간) 값이 50 이상이면 전체 사탕의 갯수가 답이 된다.
 if k >= 50:
     result_max = sum_candy
 
