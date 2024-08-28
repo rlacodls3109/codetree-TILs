@@ -3,11 +3,14 @@ MAX_BASKET = 100
 n, k = tuple(map(int,input().split()))
 
 # 바구니의 위치 배열
-arr = [0] * MAX_BASKET
+# 위치는 1부터 시작하므로 0번째 배열위치는 비워둔다
+arr = [0] * (MAX_BASKET+1)
 
 # 입력되는 사탕의 정보를 배열에 저장한다.
 for _ in range(n):
     candy, pos_basket = tuple(map(int,input().split()))
+    if pos_basket > len(arr):
+        print(pos_basket)
     arr[pos_basket] += candy
 
 
