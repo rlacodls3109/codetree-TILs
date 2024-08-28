@@ -8,7 +8,7 @@ arr = [0] * MAX_BASKET
 # 입력되는 사탕의 정보를 배열에 저장한다.
 for _ in range(n):
     candy, pos_basket = tuple(map(int,input().split()))
-    arr[pos_basket] = candy
+    arr[pos_basket] += candy
 
 
 result_max = -1
