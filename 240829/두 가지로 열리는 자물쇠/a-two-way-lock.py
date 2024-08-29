@@ -8,9 +8,9 @@ result = 0
 # 자리에 대한 거리가 2 이내인지 확인하는 함수
 def dist_is_two(q,w):
     # 한 숫자가 8,9 일 경우에 확인하는 과정이 필요하다
-    if (q == 9 and (w == 1 or w == 2)) or (w == 9 and (q == 1 or q == 2)):
+    if (q == n and (w == 1 or w == 2)) or (w == n and (q == 1 or q == 2)):
         return True
-    elif (q == 8 and w == 1) or (w == 8 and q == 1):
+    elif (q == n-1 and w == 1) or (w == n-1 and q == 1):
         return True
     else:
         return abs(q-w) <= 2
@@ -26,5 +26,4 @@ for i in range(1,n+1):
             # 둘 다 만족하는 경우는 하나로 생각하므로 elif
             elif dist_is_two(i,a2) and dist_is_two(j,b2) and dist_is_two(k,c2):
                 result += 1
-
 print(result)
